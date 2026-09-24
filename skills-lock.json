@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "skills": {
+    "caveman": {
+      "source": "JuliusBrussee/caveman",
+      "sourceType": "github",
+      "skillPath": "skills/caveman/SKILL.md"
+    },
+    "emil-kowalski": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": ".agents/skills/emil-kowalski/SKILL.md"
+    },
+    "taste": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": ".agents/skills/taste/SKILL.md"
+    },
+    "stop-ai-slop": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": ".agents/skills/stop-ai-slop/SKILL.md"
+    },
+    "humanizer": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": ".agents/skills/humanizer/SKILL.md"
+    }
+  }
+}
