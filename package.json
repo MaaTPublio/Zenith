@@ -13,6 +13,7 @@
     "test:watch": "vitest",
     "validate": "npm run typecheck && npm run lint && npm run test",
     "sync-rules": "node scripts/sync-rules.js",
+    "setup:hooks": "node scripts/setup-git-hooks.js",
     "hook:pre-commit": "node scripts/hooks/safe-hook-runner.js pre-commit",
     "hook:post-edit": "node scripts/hooks/safe-hook-runner.js post-edit"
   },
