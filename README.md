@@ -2,13 +2,14 @@
   <img src=".github/assets/logo.png" alt="Zenith Logo" width="220" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);" />
   <h1>Zenith</h1>
   <p><strong>The High-Craft Software Engineering & AI Pair-Programming Blueprint</strong></p>
-  <p>Um blueprint de engenharia disciplinada, governança de IA, ergonomia Mobile First e refinamento de interface.</p>
+  <p>Um blueprint completo de engenharia disciplinada, governança de IA, ergonomia Mobile First, performance React/Next.js e observabilidade.</p>
 
   <p>
     <img src="https://img.shields.io/badge/TypeScript-5.x_Strict-3178C6?logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Next.js-15.x-000000?logo=next.js&logoColor=white" alt="Next.js" />
     <img src="https://img.shields.io/badge/Biome-Linter_2.5-60A5FA?logo=biome&logoColor=white" alt="Biome" />
     <img src="https://img.shields.io/badge/Vitest-Unit_Tests-6E9F18?logo=vitest&logoColor=white" alt="Vitest" />
+    <img src="https://img.shields.io/badge/Vercel_Labs-60+_Rules-black?logo=vercel&logoColor=white" alt="Vercel" />
     <img src="https://img.shields.io/badge/Framer_Motion-Spring_Physics-FF0055?logo=framer&logoColor=white" alt="Framer Motion" />
     <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
   </p>
@@ -18,7 +19,7 @@
 
 ## 🌟 Sobre o Zenith
 
-O **Zenith** é a destilação prática de padrões de engenharia de software de alta performance, construído para servir como **blueprint canônico** para novos produtos e sistemas.
+O **Zenith** é a destilação prática dos padrões de engenharia mais eficientes do mercado, construído para servir como **blueprint canônico** para novos produtos e sistemas web e mobile.
 
 Ele foi concebido para resolver o maior desafio do desenvolvimento acelerado por IA: **manter a arquitetura limpa, previsível, segura e com altíssimo padrão estético sem sobrecarregar a base de código com complexidade acidental ou clichês gerados por IA.**
 
@@ -46,85 +47,94 @@ Módulos concisos previnem a degradação da janela de contexto da IA e impedem 
 
 ---
 
-## 🎨 Craft de UI & Anti-AI Slop
+## 🧠 Arsenal de Skills e Regras Integradas
 
-O Zenith integra skills nativas para elevar o acabamento visual e funcional:
+O Zenith traz um conjunto completo de skills especializadas para elevar a barra de qualidade:
 
-* **⚡ `emil-kowalski` (Spring Physics & Micro-interações):**
-  * Física de molas realistas com Framer Motion (`type: "spring"`).
-  * Nenhuma animação excede **350ms** (micro-interações de 100ms a 200ms).
-  * Animações restritas a `transform` e `opacity` para evitar *layout thrashing*.
-  * Padrão `<AnimatePresence mode="popLayout">` para transições de saída estáveis.
+### 🚀 Performance React & Next.js (`vercel-react-best-practices`)
+Compilação oficial de mais de 60 regras da **Vercel Labs**:
+* Otimização de bundle e eliminação de importações pesadas (`bundle-dynamic-imports`, `bundle-barrel-imports`).
+* Prevenção de re-renders desnecessários (`rerender-memo`, `rerender-derived-state-no-effect`).
+* Estratégias seguras de Server Actions e serialização no servidor (`server-auth-actions`, `server-serialization`).
+* Caching e requisições paralelas sem bloqueio de render (`server-parallel-fetching`, `server-cache-react`).
 
-* **🎯 `taste` (Contenção & Tipografia Funcional):**
-  * Regra da Contenção: apenas **um** ponto de destaque visual por seção.
-  * *Tabular Numbers* obrigatórios (`tabular-nums`) em números, moedas e datas.
-  * Densidade funcional com proximidade ótica de 4px–8px.
-  * Elevação suave com bordas translúcidas (`border-border/60`), banindo sombras pesadas.
+### 🛡️ Auditoria & Segurança Web
+* **`security-review` (GetSentry):** Auditoria metódica contra vulnerabilidades OWASP, injeções, XSS, SSRF e controle de acesso com base em evidências de alta confiança.
+* **`code-review-excellence`:** Diretrizes para revisões de código construtivas, padrões de PR e arquitetura limpa.
+* **`web-quality-accessibility`:** Conformidade WCAG 2.2 AA (navegação por teclado, contrastes óticos, leitores de tela).
+* **`web-quality-core-web-vitals`:** Diagnóstico e otimização para LCP, INP e CLS.
+* **`web-quality-performance` & `web-quality-seo`:** Otimizações de renderização, metadados e indexação.
+* **`grill-with-docs`:** Entrevista socrática focada em desafiar premissas de arquitetura antes da codificação.
 
-* **🚫 `stop-ai-slop` (Diretriz Anti-Clichês de IA):**
-  * Proibição de fundos pretos com bolhas roxas/ciano genéricas (`gradient blobs`).
-  * Proibição do grid previsível de 3 cards com ícones em círculos coloridos.
-  * Proibição de slogans vazios e emojis decorativos em excesso (`🚀`, `✨`, `🔥`).
-
-* **💬 `humanizer` (UX Writing em Português Brasileiro):**
-  * Toda mensagem responde imediatamente a: **"O que aconteceu?"** e **"O que fazer agora?"**.
-  * Termos corporativos/robóticos banidos (ex: proibido *"Operação efetuada com sucesso"*, usa-se *"Pronto! Item salvo"*).
-  * Empty states em 3 passos: identifica o espaço, explica o benefício e oferece a ação inicial.
-
----
-
-## 🛡️ Observabilidade e Qualidade Técnica
-
-* **Sem `console.log`:** Utilização exclusiva do logger oficial (`src/lib/logger.ts`) com redação automática de dados sensíveis e PII (LGPD).
-* **Tratamento de Erros Padronizado:** NUNCA lançar `Error` genérico; uso de `AppError` com `ErrorCode` explícito e tipado.
-* **Respostas de API Consistentes:** Respostas estruturadas com `requestId`, `timestamp` e `errorCode`.
-* **Mobile First Rigoroso:** Controles críticos na *thumb zone* e prevenção de zoom involuntário no iOS Safari (`text-base` / 16px em inputs).
+### 🎨 Craft de UI & Anti-AI Slop
+* **`emil-kowalski` (Spring Physics & Micro-interações):** Física de molas no Framer Motion, teto de 350ms, animações puras em `transform`/`opacity` e `<AnimatePresence mode="popLayout">`.
+* **`taste` (Contenção & Tipografia Funcional):** Apenas um ponto de destaque por seção, números tabulares (`tabular-nums`) e elevação sutil em camadas.
+* **`stop-ai-slop` (Anti-Clichês):** Banimento de fundos pretos com bolhas roxas genéricas, grids previsíveis de 3 cards e copys marketeiros vazios.
+* **`humanizer` (UX Writing em PT-BR):** Mensagens orientadas a *"O que aconteceu?"* e *"O que fazer agora?"*, banindo jargões corporativos robóticos.
 
 ---
 
-## 📁 Estrutura do Blueprint
+## 🛠️ Módulos de Infraestrutura Prontos para Uso
+
+O Zenith já inclui utilitários de nível de produção em `src/lib/`:
+
+* **`withApiHandler` (`src/lib/errors/api-handler.ts`):** Envelopa rotas de API do Next.js App Router com geração automática de `x-request-id`, captura defensiva de exceções, log de latência/status e formato JSON uniforme.
+* **`rate-limit.ts` (`src/lib/rate-limit.ts`):** Proteção contra abuso e controle de custos (janela fixa em memória com limpeza periódica e suporte a headers padrão HTTP).
+* **`logger.ts` (`src/lib/logger.ts`):** Logger oficial com redação automática de PII e segredos (LGPD-ready).
+* **`AppError` (`src/lib/errors/app-error.ts`):** Erros tipados e padronizados com `ErrorCode`.
+* **Test Factories (`src/test/factories/`):** Padrão declarativo para geração de dados de teste determinísticos com Vitest.
+
+---
+
+## 📁 Estrutura de Diretórios
 
 ```text
 Zenith/
 ├── .agents/
 │   ├── rules/
-│   │   └── parallel-subagents.md      # Protocolo de orquestração de subagentes concorrentes
+│   │   └── parallel-subagents.md      # Orquestração de subagentes concorrentes
 │   └── skills/
-│       ├── emil-kowalski/SKILL.md     # Animação fluida e física de molas
-│       ├── taste/SKILL.md             # Contenção estética e tipografia intencional
-│       ├── stop-ai-slop/SKILL.md      # Eliminação de clichês e ruído de IA
-│       └── humanizer/SKILL.md         # Microcopy acolhedor e acionável em PT-BR
+│       ├── vercel-react-best-practices/ # 60+ regras oficiais da Vercel Labs
+│       ├── security-review/           # Auditoria OWASP e análise de vulnerabilidades
+│       ├── code-review-excellence/    # Padrões rigorosos de revisão de código
+│       ├── web-quality-*/             # Acessibilidade, Core Web Vitals, Performance e SEO
+│       ├── grill-with-docs/           # Entrevista para refinamento arquitetural
+│       ├── emil-kowalski/             # Física de molas e micro-interações táteis
+│       ├── taste/                     # Contenção estética e tipografia intencional
+│       ├── stop-ai-slop/              # Eliminação de ruído e clichês de IA
+│       └── humanizer/                 # Microcopy acolhedor e direto em PT-BR
 ├── .github/
-│   └── assets/                        # Assets visuais e branding
+│   └── assets/                        # Logo e assets visuais
 ├── docs/
-│   └── INSTRUCOES_IA.md               # Manual condensado de diretrizes para o agente
+│   └── INSTRUCOES_IA.md               # Manual consolidado para o agente
 ├── scripts/
 │   ├── sync-rules.js                  # Sincroniza RULES.md -> AGENTS.md e CLAUDE.md
 │   └── hooks/
 │       └── safe-hook-runner.js        # Runner fail-open para pre-commit e post-edit
 ├── src/
-│   └── lib/
-│       ├── errors/                    # AppError, ErrorCodes e contrato tipado
-│       └── logger.ts                  # Logger seguro com sanitização de PII
-├── .gitignore                         # Exclusões de ambiente, builds e dependências
-├── AGENTS.md                          # Regras canônicas para agentes autônomos
-├── biome.json                         # Linter de alta velocidade (zero erros tolerados)
-├── CLAUDE.md                          # Regras canônicas para Claude Code
-├── DESIGN.md                          # Design Tokens, 10% Accent Rule e Mobile First
+│   ├── lib/
+│   │   ├── errors/                    # withApiHandler, AppError, ErrorCodes e responses
+│   │   ├── rate-limit.ts              # Rate limiting com fail-open e headers HTTP
+│   │   └── logger.ts                  # Logger com sanitização de PII
+│   └── test/
+│       └── factories/                 # Test Data Factories para Vitest
+├── AGENTS.md                          # Regras para agentes autônomos
+├── biome.json                         # Linter estrito e de alta velocidade
+├── CLAUDE.md                          # Regras para Claude Code
+├── DESIGN.md                          # Design Tokens e Mobile First
 ├── package.json                       # Scripts de validação e dependências
 ├── README.md                          # Documentação oficial
 ├── RULES.md                           # Fonte canônica de regras e governança
-├── skills-lock.json                   # Catálogo fixo de skills
+├── skills-lock.json                   # Catálogo fixo de skills instaladas
 ├── tsconfig.json                      # TypeScript Strict
-└── vitest.config.ts                   # Configuração de testes unitários ultrarrápidos
+└── vitest.config.ts                   # Execução rápida de testes unitários
 ```
 
 ---
 
 ## 🚀 Como Utilizar este Blueprint
 
-### 1. Clonar ou Usar como Template
+### 1. Clonar
 ```bash
 git clone https://github.com/MaaTPublio/Zenith.git meu-novo-projeto
 cd meu-novo-projeto
@@ -136,13 +146,11 @@ npm install
 ```
 
 ### 3. Sincronizar Regras de IA
-Sempre que editar `RULES.md`, propague as diretrizes para todos os ecossistemas de agentes com:
 ```bash
 npm run sync-rules
 ```
 
-### 4. Executar Quality Gates
-Nenhum PR ou funcionalidade deve ser concluída sem aprovação em todos os portões de qualidade:
+### 4. Executar os Portões de Qualidade
 ```bash
 # Executa Typecheck + Linter Biome + Testes Vitest
 npm run validate

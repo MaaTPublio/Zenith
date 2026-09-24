@@ -6,6 +6,11 @@
       "sourceType": "github",
       "skillPath": "skills/caveman/SKILL.md"
     },
+    "caveman-commit": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": ".agents/skills/caveman-commit/SKILL.md"
+    },
     "emil-kowalski": {
       "source": "local",
       "sourceType": "local",
@@ -25,6 +30,66 @@
       "source": "local",
       "sourceType": "local",
       "skillPath": ".agents/skills/humanizer/SKILL.md"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/vercel-react-best-practices/SKILL.md"
+    },
+    "security-review": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/security-review/SKILL.md"
+    },
+    "code-review-excellence": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/code-review-excellence/SKILL.md"
+    },
+    "web-quality-accessibility": {
+      "source": "web-quality-skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/web-quality-accessibility/SKILL.md"
+    },
+    "web-quality-core-web-vitals": {
+      "source": "web-quality-skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/web-quality-core-web-vitals/SKILL.md"
+    },
+    "web-quality-performance": {
+      "source": "web-quality-skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/web-quality-performance/SKILL.md"
+    },
+    "web-quality-seo": {
+      "source": "web-quality-skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/web-quality-seo/SKILL.md"
+    },
+    "web-quality-audit": {
+      "source": "web-quality-skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/web-quality-audit/SKILL.md"
+    },
+    "web-quality-best-practices": {
+      "source": "web-quality-skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/web-quality-best-practices/SKILL.md"
+    },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/grill-with-docs/SKILL.md"
+    },
+    "webapp-testing": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/webapp-testing/SKILL.md"
+    },
+    "front-end-skill": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": ".agents/skills/front-end-skill/SKILL.md"
     }
   }
 }
