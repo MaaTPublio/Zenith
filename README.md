@@ -58,6 +58,14 @@ Compilação oficial de mais de 60 regras da **Vercel Labs**:
 * Estratégias seguras de Server Actions e serialização no servidor (`server-auth-actions`, `server-serialization`).
 * Caching e requisições paralelas sem bloqueio de render (`server-parallel-fetching`, `server-cache-react`).
 
+### 📱 Apps Nativos com Expo & React Native (`expo-mobile-development`)
+Conjunto canônico para desenvolvimento mobile de alta performance (iOS e Android):
+* **Expo Router:** Roteamento tipado baseado em arquivos (`app/(tabs)`, `app/(auth)`).
+* **Ergonomia Tátil:** Safe Area insets dinâmicos (`react-native-safe-area-context`) e haptics em micro-interações (`expo-haptics`).
+* **Segurança Nativa:** Armazenamento seguro de credenciais via `expo-secure-store` (Keychain/Keystore).
+* **Física de Molas:** `react-native-reanimated` alinhado aos princípios de Emil Kowalski.
+* **Prevenção de Erros de Plataforma:** Proibição estrita de tags DOM (`div`, `span`) ou APIs de browser.
+
 ### 🛡️ Auditoria & Segurança Web
 * **`security-review` (GetSentry):** Auditoria metódica contra vulnerabilidades OWASP, injeções, XSS, SSRF e controle de acesso com base em evidências de alta confiança.
 * **`code-review-excellence`:** Diretrizes para revisões de código construtivas, padrões de PR e arquitetura limpa.
@@ -106,6 +114,7 @@ Zenith/
 │       ├── context-budget/            # Heurísticas de economia de contexto
 │       ├── build-error-resolver/      # Recuperação determinística de builds
 │       ├── architecture-decision-records/ # Gerador e auditor de ADRs
+│       ├── expo-mobile-development/   # Padrões e ergonomia para Expo e React Native
 │       ├── vercel-react-best-practices/ # 60+ regras oficiais da Vercel Labs
 │       ├── security-review/           # Auditoria OWASP e análise de vulnerabilidades
 │       ├── code-review-excellence/    # Padrões rigorosos de revisão de código
@@ -120,7 +129,8 @@ Zenith/
 ├── docs/
 │   ├── adr/                           # Architecture Decision Records versionados
 │   │   ├── 000-template.md
-│   │   └── 001-zenith-blueprint-architecture.md
+│   │   ├── 001-zenith-blueprint-architecture.md
+│   │   └── 002-multi-target-blueprint-and-expo.md
 │   └── INSTRUCOES_IA.md               # Manual consolidado para o agente
 
 ├── scripts/

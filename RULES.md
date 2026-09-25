@@ -126,6 +126,23 @@ Sempre aumentar:
 
 --------------------------------------------------
 
+# Seleção de Stacks (Multi-Target: Web vs Mobile com Expo)
+
+O Zenith possui um núcleo de engenharia agnóstico e especializações para cada target:
+1. **Aplicações Web, SaaS e Portais SEO:**
+   - Stack: Next.js (App Router) + Tailwind CSS + Server Actions.
+   - Seguir: `vercel-react-best-practices`.
+2. **Aplicativos Móveis Nativos (iOS & Android):**
+   - Stack: **Expo** (Expo Router) + React Native + NativeWind / StyleSheet.
+   - Seguir: `expo-mobile-development`.
+   - Proibido usar elementos DOM (`div`, `span`, `p`, `button`) ou APIs de navegador (`window`, `localStorage`).
+   - Armazenamento sensível obrigatório com `expo-secure-store`.
+   - Safe Area obrigatório com `react-native-safe-area-context` e feedback físico com `expo-haptics`.
+3. **Serviços Backend / APIs Independentes:**
+   - Stack: Fastify/Node ou Go/Python para alto throughput.
+
+--------------------------------------------------
+
 # UX Writing Humanizado
 
 Toda mensagem do sistema deve ser humana, acolhedora, objetiva e responder a duas perguntas:

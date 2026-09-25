@@ -11,6 +11,7 @@ Um Architecture Decision Record captura uma decisão técnica significativa, inc
 | :--- | :--- | :--- | :--- |
 | [000](file:///docs/adr/000-template.md) | Template Padrão de ADR | Aceito | 2026-09-25 |
 | [001](file:///docs/adr/001-zenith-blueprint-architecture.md) | Adoção da Arquitetura Blueprint Zenith (Next.js, Biome, Vitest, Tailwind) | Aceito | 2026-09-25 |
+| [002](file:///docs/adr/002-multi-target-blueprint-and-expo.md) | Desacoplamento Multi-Target e Adoção de Expo para Mobile | Aceito | 2026-09-25 |
 
 ## Convenção de Nomenclatura
 - Arquivos: `NNN-titulo-em-kebab-case.md` (com numeração de 3 dígitos, ex: `002-autenticacao-session.md`).

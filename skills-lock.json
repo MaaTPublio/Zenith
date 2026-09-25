@@ -110,6 +110,11 @@
       "source": "affaan-m/ecc",
       "sourceType": "curated",
       "skillPath": ".agents/skills/architecture-decision-records/SKILL.md"
+    },
+    "expo-mobile-development": {
+      "source": "local",
+      "sourceType": "curated",
+      "skillPath": ".agents/skills/expo-mobile-development/SKILL.md"
     }
   }
 }
