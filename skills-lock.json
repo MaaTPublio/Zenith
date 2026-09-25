@@ -90,6 +90,26 @@
       "source": "local",
       "sourceType": "local",
       "skillPath": ".agents/skills/front-end-skill/SKILL.md"
+    },
+    "continuous-learning": {
+      "source": "affaan-m/ecc",
+      "sourceType": "curated",
+      "skillPath": ".agents/skills/continuous-learning/SKILL.md"
+    },
+    "context-budget": {
+      "source": "affaan-m/ecc",
+      "sourceType": "curated",
+      "skillPath": ".agents/skills/context-budget/SKILL.md"
+    },
+    "build-error-resolver": {
+      "source": "affaan-m/ecc",
+      "sourceType": "curated",
+      "skillPath": ".agents/skills/build-error-resolver/SKILL.md"
+    },
+    "architecture-decision-records": {
+      "source": "affaan-m/ecc",
+      "sourceType": "curated",
+      "skillPath": ".agents/skills/architecture-decision-records/SKILL.md"
     }
   }
 }

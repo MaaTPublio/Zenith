@@ -190,3 +190,15 @@ Ao investigar qualquer erro ou falha:
 ### 5. Teto de Tamanho de Arquivo (~350 Linhas)
 - Módulos concisos (< 350 linhas);
 - Separar responsabilidades: regras de negócio puras, componentes de interface e serviços de integração/API em arquivos próprios.
+
+### 6. Aprendizagem Contínua (Continuous Learning)
+- Após depurar bugs complexos ou resolver atritos de arquitetura, registrar a lição no ledger de memória (`.agents/memory/learnings.md`).
+- Consultar o ledger ao iniciar tarefas para evitar repetição de erros conhecidos.
+
+### 7. Gestão de Contexto e Eficiência (Context Budget)
+- Priorizar leituras fatiadas (`view_file` com linhas de início e fim) para evitar estouro da janela de contexto.
+- Durante depurações rápidas, rodar apenas o arquivo de teste relevante antes de disparar o Quality Gate completo.
+
+### 8. Registro de Decisões Arquiteturais (ADRs)
+- Decisões estruturantes que alterem libs-chave, modelos de autenticação, banco ou esteira de CI devem ser registradas em `docs/adr/NNN-titulo.md`.
+

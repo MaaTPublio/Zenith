@@ -72,6 +72,12 @@ Compilação oficial de mais de 60 regras da **Vercel Labs**:
 * **`stop-ai-slop` (Anti-Clichês):** Banimento de fundos pretos com bolhas roxas genéricas, grids previsíveis de 3 cards e copys marketeiros vazios.
 * **`humanizer` (UX Writing em PT-BR):** Mensagens orientadas a *"O que aconteceu?"* e *"O que fazer agora?"*, banindo jargões corporativos robóticos.
 
+### 🧠 Memória Contínua, Orçamento de Contexto & ADRs (ECC-Inspired)
+* **`continuous-learning`:** Ledger em `.agents/memory/learnings.md` que armazena lições aprendidas após depurações, evitando reincidência de erros.
+* **`context-budget`:** Heurísticas de leitura fatiada e economia de tokens para preservar a atenção do modelo.
+* **`build-error-resolver`:** Protocolo cirúrgico para triagem de erros em Quality Gates sem mutações colaterais.
+* **`architecture-decision-records`:** Framework em `docs/adr/` para documentar decisões técnicas estruturantes.
+
 ---
 
 ## 🛠️ Módulos de Infraestrutura Prontos para Uso
@@ -91,9 +97,15 @@ O Zenith já inclui utilitários de nível de produção em `src/lib/`:
 ```text
 Zenith/
 ├── .agents/
+│   ├── memory/
+│   │   └── learnings.md               # Ledger de memória contínua do agente
 │   ├── rules/
 │   │   └── parallel-subagents.md      # Orquestração de subagentes concorrentes
 │   └── skills/
+│       ├── continuous-learning/       # Registro sistemático de lições aprendidas
+│       ├── context-budget/            # Heurísticas de economia de contexto
+│       ├── build-error-resolver/      # Recuperação determinística de builds
+│       ├── architecture-decision-records/ # Gerador e auditor de ADRs
 │       ├── vercel-react-best-practices/ # 60+ regras oficiais da Vercel Labs
 │       ├── security-review/           # Auditoria OWASP e análise de vulnerabilidades
 │       ├── code-review-excellence/    # Padrões rigorosos de revisão de código
@@ -106,7 +118,11 @@ Zenith/
 ├── .github/
 │   └── assets/                        # Logo e assets visuais
 ├── docs/
+│   ├── adr/                           # Architecture Decision Records versionados
+│   │   ├── 000-template.md
+│   │   └── 001-zenith-blueprint-architecture.md
 │   └── INSTRUCOES_IA.md               # Manual consolidado para o agente
+
 ├── scripts/
 │   ├── sync-rules.js                  # Sincroniza RULES.md -> AGENTS.md e CLAUDE.md
 │   └── hooks/
